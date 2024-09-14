@@ -10,11 +10,13 @@ html, body {
 }
 .port{
     font-family:cursive;
-    background-color:#334B35;
+    background-color:#ffffff;
     color: #bbc5cf;
 }
-.move-left {
+.move-right {
     display: block;
-    margin-left: 0; 
-    margin-right: auto; 
+    margin-left: auto; /* Отодвигает изображение влево */
+    margin-right: 0; /* Убирает отступ справа */
+    width: 100%; /* Настройте размер изображения при необходимости */
+    max-width: 600px; /* Задайте максимальную ширину изображения */
 }
