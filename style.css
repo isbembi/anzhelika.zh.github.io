@@ -8,15 +8,30 @@ html, body {
     width: 100%;
     height: 100%;
 }
-.port{
-    font-family:cursive;
-    background-color:#ffffff;
+
+.port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: cursive;
+    background-color: #ffffff;
     color: #bbc5cf;
+    position: relative;
+    padding: 0 20px; /* Add padding for responsiveness */
 }
+
+.content {
+    flex-grow: 1;
+    text-align: left; /* Align the text to the left */
+    max-width: 600px; /* Limit the width of the text for better layout */
+}
+
 .move-right {
-    display: block;
-    margin-left: auto; /* Отодвигает изображение влево */
-    margin-right: 0; /* Убирает отступ справа */
-    width: 100%; /* Настройте размер изображения при необходимости */
-    max-width: 600px; /* Задайте максимальную ширину изображения */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 50px;
+    object-fit: cover; /* Ensure the image fits well inside the circle */
+    border: 5px solid #bbc5cf; /* Optional: Add a border to match the style */
 }
